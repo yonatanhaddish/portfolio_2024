@@ -7,9 +7,9 @@ function About() {
       <div className="about-detail">
         <div className="about-title">
           <p className="about-name">
-            Hello,
-            <br />
-            <span className="about-name-span">I am Yonatan Haddish</span>
+            <span className="txt-hello">Hello,</span>
+            <br />I am
+            <span className="about-name-span"> Yonatan Haddish</span>
           </p>
           <p className="about-sub">A Full Stack Developer</p>
         </div>

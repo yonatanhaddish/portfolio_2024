@@ -1,28 +1,45 @@
 .about-container {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   display: flex;
   justify-content: space-around;
-  background-color: #e6e6e6;
+  background-color: #d2dcea;
   height: calc(100vh - 60px);
 }
 .about-detail {
-  border: solid blue 2px;
-  height: 50%;
+  /* border: solid blue 2px; */
+  display: flex;
+  flex-direction: column;
+  height: 40%;
   align-self: center;
+  justify-content: center;
 }
 .about-title {
   /* border: solid purple 2px; */
 }
+.about-name-span {
+  color: #0441f5;
+  font-family: Papyrus;
+}
+.txt-hello {
+  font-weight: bold;
+}
 .about-buttons {
   /* border: solid orange 2px; */
+  display: flex;
+  justify-content: space-between;
+  margin-right: 140px;
+  margin-top: 30px;
 }
 .about-img {
-  border: solid green 2px;
-  height: 400px;
-  width: 400px;
+  border: solid #000 2px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 30px;
   align-self: center;
+  background-image: url("/public/images/image001.jpeg");
+  background-size: cover;
 }
 .about-name {
   font-family: "Gill Sans", sans-serif;
@@ -30,5 +47,15 @@
 }
 .about-sub {
   font-family: "Gill Sans", sans-serif;
+  font-weight: bold;
   font-size: 2rem;
+}
+button {
+  background-color: #0441f5;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 140px;
+  font-size: 14px;
+  font-weight: bold;
 }
