@@ -5,14 +5,6 @@
     gap: 15vh;
     background-color:#0441f5;
 }
-.about-img {
-    align-self: center;
-}
-.about-img img {
-    height: 350px;
-    width: 40vh;
-    background-size: cover;
-}
 .about-description {
     height: 400px;
     width: 400px;
@@ -20,10 +12,43 @@
     flex-direction: column;
     align-self: center;
     justify-content: space-around;
+    gap: 10px;
 }
 .about-desc {
     background-color: #d2dcea;
     padding: 0 20px 0 20px;
     font-size: 12px;
     border-radius: 4px;
+    color: #000;
+    font-family: "Playwrite DE Grund", cursive;
 }
+.about-image001 {
+    text-align: center;
+    align-self: center;
+    background-image: url("../../images/image001.jpeg");
+    background-size: cover;
+    height: 350px;
+    width: 40vh;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transition effect */
+  }
+.about-image002 {
+    text-align: center;
+    align-self: center;
+    background-image: url("../../images/image002.jpeg");
+    background-size: cover;
+    height: 350px;
+    width: 40vh;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transition effect */
+  }
+  .about-image003 {
+    text-align: center;
+    align-self: center;
+    background-image: url("../../images/image003.jpeg");
+    background-size: cover;
+    height: 350px;
+    width: 40vh;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transition effect */
+  }

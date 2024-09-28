@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./index.css";
-import image001 from "../../images/image001.jpeg";
-import image002 from "../../images/image002.jpeg";
 
 function About() {
+
+    const [currentSelectedImage, setCurrentSelectedImage] = useState("image001");
+
+useEffect(() => {
+    const listImages = ["image001", "image002", "image003"];
+    const interval = setInterval(() => {
+        let selectedRandomImage = listImages[Math.floor(Math.random() * listImages.length)]
+        setCurrentSelectedImage(selectedRandomImage)
+    }, 4000)
+    return () => clearInterval(interval)
+}, [])
+  
   return (
     <div className='about-container'>
-      <div className="about-img">
-        <img src={image001} alt='home-img' />
-      </div>
+        <div className={`about-${currentSelectedImage}`}>
+       </div>
       <div className='about-description'>
         <div className='about-desc'>
             <h3>With a robust foundation in Applied Mathematics and a certificate in Full Stack Development, 
