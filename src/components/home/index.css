@@ -1,11 +1,11 @@
-.about-container {
+.home-container {
   /* border: solid red 2px; */
   display: flex;
   justify-content: space-around;
   background-color: #d2dcea;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 50px);
 }
-.about-detail {
+.home-detail {
   /* border: solid blue 2px; */
   display: flex;
   flex-direction: column;
@@ -13,25 +13,21 @@
   align-self: center;
   justify-content: center;
 }
-.about-title {
-  /* border: solid purple 2px; */
-}
-.about-name-span {
+.home-name-span {
   color: #0441f5;
   font-family: Papyrus;
 }
 .txt-hello {
   font-weight: bold;
 }
-.about-buttons {
+.home-buttons {
   /* border: solid orange 2px; */
   display: flex;
   justify-content: space-between;
   margin-right: 140px;
   margin-top: 30px;
 }
-.about-img {
-  border: solid #000 2px;
+.home-img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -41,11 +37,11 @@
   background-image: url("/public/images/image001.jpeg");
   background-size: cover;
 }
-.about-name {
+.home-name {
   font-family: "Gill Sans", sans-serif;
   font-size: 3rem;
 }
-.about-sub {
+.home-sub {
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
   font-size: 2rem;

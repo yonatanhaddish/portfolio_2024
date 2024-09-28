@@ -1,9 +1,33 @@
 import React from 'react'
+import "./index.css";
+import image001 from "../../images/image001.jpeg";
+import image002 from "../../images/image002.jpeg";
 
 function About() {
   return (
-    <div>
-      <h1>About Testing</h1>
+    <div className='about-container'>
+      <div className="about-img">
+        <img src={image001} alt='home-img' />
+      </div>
+      <div className='about-description'>
+        <div className='about-desc'>
+            <h3>With a robust foundation in Applied Mathematics and a certificate in Full Stack Development, 
+                my career journey as a Software Developer has been fuled by a passion for coding and problem-solving. 
+                Meticulously leveraging skills in Ansible, React, NodeJs, Express, SQL and NoSQL Databases.
+            </h3>
+        </div>
+        <div className='about-desc'>
+            <h3>
+            I am eager to contribute my skills and experience to innovative projects that push the boundaries of technology and 
+            create impact solutions.
+            </h3>
+        </div>
+        <div className='about-desc'>
+            <h3>
+            I am eager to contribute my skills and experience to innovative projects that push the boundaries of technology and create impact solutions.
+            </h3>
+        </div>
+      </div>
     </div>
   )
 }

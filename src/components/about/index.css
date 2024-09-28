@@ -1,0 +1,29 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    gap: 15vh;
+    background-color:#0441f5;
+}
+.about-img {
+    align-self: center;
+}
+.about-img img {
+    height: 350px;
+    width: 40vh;
+    background-size: cover;
+}
+.about-description {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+}
+.about-desc {
+    background-color: #d2dcea;
+    padding: 0 20px 0 20px;
+    font-size: 12px;
+    border-radius: 4px;
+}

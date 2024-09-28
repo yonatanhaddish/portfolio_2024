@@ -3,22 +3,22 @@ import "./index.css";
 
 function Home() {
   return (
-    <div className="about-container">
-      <div className="about-detail">
-        <div className="about-title">
-          <p className="about-name">
+    <div className="home-container">
+      <div className="home-detail">
+        <div className="home-title">
+          <p className="home-name">
             <span className="txt-hello">Hello,</span>
             <br />I am
-            <span className="about-name-span"> Yonatan Haddish</span>
+            <span className="home-name-span"> Yonatan Haddish</span>
           </p>
-          <p className="about-sub">A Full Stack Developer</p>
+          <p className="home-sub">A Full Stack Developer</p>
         </div>
-        <div className="about-buttons">
+        <div className="home-buttons">
           <button>View Projects</button>
           <button>Hire Me</button>
         </div>
       </div>
-      <div className="about-img"></div>
+      <div className="home-img"></div>
     </div>
   );
 }
