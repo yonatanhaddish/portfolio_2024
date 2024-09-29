@@ -6,7 +6,7 @@ function Service() {
     <div className="service-container">
       <div className="service-heading">What I do</div>
       <div className="service-cards">
-        <div className="service-webapp">
+        <div className="service-webapp services">
           <h4>Web Application Development</h4>
           <p>
             Offering end-to-end full stack web application development, from
@@ -14,7 +14,7 @@ function Service() {
             systems with secure APIs and database.
           </p>
         </div>
-        <div className="service-photo">
+        <div className="service-photo services">
           <h4>Photography</h4>
           <p>
             Specializing in small event photography, from family gatherings to
@@ -24,7 +24,7 @@ function Service() {
             emotions that make your event truly unique.
           </p>
         </div>
-        <div className="service-tutor">
+        <div className="service-tutor services">
           <h4>Coding Tutoring</h4>
           <p>
             Provide an expert tutoring on project based MERN stack application
