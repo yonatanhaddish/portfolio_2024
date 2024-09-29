@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     height: 650px;
-    gap: 15vh;
+    gap:12vh;
     background-color:#0441f5;
 }
 .about-description {
     height: 400px;
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-self: center;
