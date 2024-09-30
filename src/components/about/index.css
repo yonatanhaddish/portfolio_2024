@@ -1,59 +1,54 @@
 .about-container {
-  /* border: solid red 2px; */
-  display: flex;
-  justify-content: space-around;
-  background-color: #d2dcea;
-  height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    gap:12vh;
+    background-color:#0441f5;
 }
-.about-detail {
-  /* border: solid blue 2px; */
-  display: flex;
-  flex-direction: column;
-  height: 40%;
-  align-self: center;
-  justify-content: center;
+.about-description {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+    gap: 10px;
 }
-
-.about-name-span {
-  color: #0441f5;
-  font-family: Papyrus;
+.about-desc {
+    background-color: #d2dcea;
+    padding: 0 20px 0 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #000;
+    font-family: "Playwrite DE Grund", cursive;
 }
-.txt-hello {
-  font-weight: bold;
-}
-.about-buttons {
-  /* border: solid orange 2px; */
-  display: flex;
-  justify-content: space-between;
-  margin-right: 140px;
-  margin-top: 30px;
-}
-.about-img {
-  border: solid #000 2px;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  margin-right: 10px;
-  margin-top: 30px;
-  align-self: center;
-  background-image: url("/public/images/image001.jpeg");
-  background-size: cover;
-}
-.about-name {
-  font-family: "Gill Sans", sans-serif;
-  font-size: 3rem;
-}
-.about-sub {
-  font-family: "Gill Sans", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-}
-button {
-  background-color: #0441f5;
-  color: white;
-  border: none;
-  height: 50px;
-  width: 140px;
-  font-size: 14px;
-  font-weight: bold;
-}
+.about-image001 {
+    text-align: center;
+    align-self: center;
+    background-image: url("../../images/image001.jpeg");
+    background-size: cover;
+    height: 350px;
+    width: 40vh;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transition effect */
+  }
+.about-image002 {
+    text-align: center;
+    align-self: center;
+    background-image: url("../../images/image002.jpeg");
+    background-size: cover;
+    height: 350px;
+    width: 40vh;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transition effect */
+  }
+  .about-image003 {
+    text-align: center;
+    align-self: center;
+    background-image: url("../../images/image003.jpeg");
+    background-size: cover;
+    height: 350px;
+    width: 40vh;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Transition effect */
+  }
