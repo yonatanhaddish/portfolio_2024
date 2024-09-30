@@ -1,0 +1,13 @@
+.project-container {
+  border: solid 2px green;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+}
+.project-heading {
+  border: solid 2px red;
+}
+.project-cards-container {
+  border: solid 2px blue;
+}
