@@ -21,7 +21,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  border: solid black 2px;
   margin-top: 20px;
 }
 .project-img {

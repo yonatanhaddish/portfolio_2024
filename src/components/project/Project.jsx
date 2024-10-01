@@ -8,7 +8,7 @@ import zuWeddingDecor from "../../images/zu_wedding_decor.jpeg";
 function Project() {
   return (
     <div className="project-container">
-      <div className="project-heading">What I do</div>
+      <div className="project-heading">Projects</div>
       <div className="project-cards-container">
         <div className="project">
           <img src={alemCoffee} alt="" className="project-img" />
