@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   background-color: #d2dcea;
-  height: calc(100vh - 50px);
+  height: calc(100dvh - 50px);
 }
 .home-detail {
   /* border: solid blue 2px; */
