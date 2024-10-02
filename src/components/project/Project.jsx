@@ -20,7 +20,7 @@ function Project() {
         </div>
         <div className="project">
           <img src={summerHouse} alt="" className="project-img" />
-          <p className="project-title">Summber House</p>
+          <p className="project-title">Summer House</p>
         </div>
         <div className="project">
           <img src={zuWeddingDecor} alt="" className="project-img" />

@@ -1,0 +1,40 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 50px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 20%; /* Each item takes up 20% of the total carousel width for 5 images */
+}
+
+img {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: gray;
+}
