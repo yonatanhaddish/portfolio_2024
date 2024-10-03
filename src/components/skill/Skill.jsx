@@ -77,7 +77,7 @@ function Skill() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, [totalImages]);

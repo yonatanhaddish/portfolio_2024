@@ -6,6 +6,9 @@ import About from "./components/about/About";
 import Service from "./components/service/Service";
 import Project from "./components/project/Project";
 import Skill from "./components/skill/Skill";
+import Experience from "./components/experience/Experience";
+import Contact from "./components/contact/Contact";
+
 function App() {
   return (
     <>
@@ -15,6 +18,8 @@ function App() {
       <Service />
       <Project />
       <Skill />
+      {/* <Experience /> */}
+      <Contact />
     </>
   );
 }
