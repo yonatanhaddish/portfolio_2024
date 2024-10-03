@@ -1,19 +1,73 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import alemCoffee from "../../images/alem_coffee.jpeg";
-import alphaTimber from "../../images/alpha_timber.jpeg";
-import summerHouse from "../../images/summer_house.jpeg";
-import zuWeddingDecor from "../../images/zu_wedding_decor.jpeg";
+
+import ansible from "../../images/ansible.png";
+import github from "../../images/github.png";
+import haskell from "../../images/haskell.png";
+import html from "../../images/html-5.png";
+import java from "../../images/java.png";
+import linux from "../../images/linux.png";
+import mongodb from "../../images/mongodb.png";
+import mysql from "../../images/mysql.png";
+import postgres from "../../images/postgres.png";
+import react from "../../images/react.png";
+import sqlserver from "../../images/sqlserver.png";
+import typescript from "../../images/typescript.png";
+import javascript from "../../images/javascript.png";
 
 const skills_img = [
-  alemCoffee,
-  alphaTimber,
-  summerHouse,
-  zuWeddingDecor,
-  alemCoffee,
-  alphaTimber,
-  summerHouse,
-  zuWeddingDecor,
+  ansible,
+  github,
+  haskell,
+  html,
+  java,
+  linux,
+  mongodb,
+  mysql,
+  postgres,
+  react,
+  sqlserver,
+  typescript,
+  javascript,
+  ansible,
+  github,
+  haskell,
+  html,
+  java,
+  linux,
+  mongodb,
+  mysql,
+  postgres,
+  react,
+  sqlserver,
+  typescript,
+  javascript,
+  ansible,
+  github,
+  haskell,
+  html,
+  java,
+  linux,
+  mongodb,
+  mysql,
+  postgres,
+  react,
+  sqlserver,
+  typescript,
+  javascript,
+  ansible,
+  github,
+  haskell,
+  html,
+  java,
+  linux,
+  mongodb,
+  mysql,
+  postgres,
+  react,
+  sqlserver,
+  typescript,
+  javascript,
 ];
 
 function Skill() {
@@ -23,18 +77,18 @@ function Skill() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, [totalImages]);
 
-  const visibleImages = 5; // Number of images to show at once
+  const visibleImages = 18; // Number of images to show at once
   const translateX = `-${(currentIndex % totalImages) * (100 / visibleImages)}%`;
 
   return (
-    <div className="carousel">
+    <div className="skill-container">
       <div
-        className="carousel-inner"
+        className="skill-list"
         style={{
           width: `${(totalImages / visibleImages) * 100}%`,
           transform: `translateX(${translateX})`,
@@ -43,22 +97,13 @@ function Skill() {
         {skills_img.map((image, index) => (
           <div
             key={index}
-            className="carousel-item"
+            className="skill-img"
             style={{ flex: `0 0 ${100 / visibleImages}%` }}
           >
             <img src={image} alt={`Slide ${index}`} />
           </div>
         ))}
       </div>
-      {/* <div className="indicators">
-        {skills_img.map((_, index) => (
-          <span
-            key={index}
-            className={`indicator ${index === currentIndex ? "active" : ""}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div> */}
     </div>
   );
 }
