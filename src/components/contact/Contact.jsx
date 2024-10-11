@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./index.css";
 import emailjs from "emailjs-com";
 
@@ -22,32 +22,40 @@ function Contact() {
     e.target.reset();
   }
   return (
-    <div>
-      <div></div>
-      <div>
-        <div></div>
-        <div>
-          <form onSubmit={sendEmail}>
-            <div>
+    <div className="contact-container">
+      <div className="contact-heading">Contact</div>
+      <div className="contact-sub-container">
+        <div className="contact-img"></div>
+        <div className="contact-form">
+          <form onSubmit={sendEmail} className="form">
+            <div className="f-l-name">
+              <div className="contact-info" id="f-name">
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="First Name"
+                />
+              </div>
+              <div className="contact-info" id="l-name">
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div className="contact-info" id="email-info">
               <input
-                type="text"
-                name="first_name"
-                id="first_name"
-                placeholder="First Name"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                className="contact-info"
               />
             </div>
-            <div>
-              <input
-                type="text"
-                name="last_name"
-                id="last_name"
-                placeholder="Last Name"
-              />
-            </div>
-            <div>
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div>
+            <div className="contact-info" id="msg-info">
               <textarea
                 type="text"
                 name="message"
@@ -55,9 +63,9 @@ function Contact() {
                 placeholder="Your Message here!"
               />
             </div>
-            <div>
-              <button type="sumbit">Send Email</button>
-            </div>
+            <button type="sumbit" className="contact-btn">
+              Send Email
+            </button>
           </form>
         </div>
       </div>
