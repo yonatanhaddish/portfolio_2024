@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import emailjs from "emailjs-com";
 
@@ -7,6 +7,11 @@ const TEMPLATE_ID = "template_ryy8wqk";
 const PUBLIC_KEY = "X40iR-BWrNLaMeJgL";
 
 function Contact() {
+  const [selectedBox, setSelectedBox] = useState("");
+  function handleChange(e) {
+    setSelectedBox(e.target.id);
+  }
+
   function sendEmail(e) {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
@@ -35,6 +40,8 @@ function Contact() {
                   name="first_name"
                   id="first_name"
                   placeholder="First Name"
+                  onFocus={handleChange}
+                  className={selectedBox === "first_name" ? "active-input" : ""}
                 />
               </div>
               <div className="contact-info" id="l-name">
@@ -43,6 +50,8 @@ function Contact() {
                   name="last_name"
                   id="last_name"
                   placeholder="Last Name"
+                  onFocus={handleChange}
+                  className={selectedBox === "last_name" ? "active-input" : ""}
                 />
               </div>
             </div>
@@ -52,7 +61,8 @@ function Contact() {
                 name="email"
                 id="email"
                 placeholder="Email"
-                className="contact-info"
+                onFocus={handleChange}
+                className={selectedBox === "email" ? "active-input" : ""}
               />
             </div>
             <div className="contact-info" id="msg-info">
@@ -61,10 +71,12 @@ function Contact() {
                 name="message"
                 id="message"
                 placeholder="Your Message here!"
+                onFocus={handleChange}
+                className={selectedBox === "message" ? "active-input" : ""}
               />
             </div>
             <button type="sumbit" className="contact-btn">
-              Send Email
+              SEND
             </button>
           </form>
         </div>
