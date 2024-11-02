@@ -3,6 +3,7 @@ import "./index.css";
 
 const Experience = () => {
   const [selected, setSelected] = useState("");
+  const [selectedTest, setSelectedTest] = useState(false);
 
   const handleSelect = (event) => {
     const selectedId = event.currentTarget.getAttribute("id");

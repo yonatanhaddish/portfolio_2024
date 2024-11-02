@@ -38,7 +38,7 @@
 }
 
 #filler-class {
-  border: solid black 1px;
+  /* border: solid black 1px; */
   height: 20px;
   width: 100px;
 }
@@ -46,15 +46,18 @@
   border: solid 1px black;
   padding: 0 40px 0 20px;
 }
-.experience-class-body:hover {
+/* .experience-class-body:hover {
   background-color: #0441f5;
   color: #d2dcea;
-  transition: 0.3s ease-in-out;
-}
-
+  transition: 0.5s ease-in;
+} */
 .experience-class.selected #filler-class {
   background-color: #0441f5;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.experience-class.selected .experience-class-body {
+  background-color: #0441f5;
+  transition: 0.9s ease-in-out;
 }
 .experience-paragraph {
   font-weight: 800;
