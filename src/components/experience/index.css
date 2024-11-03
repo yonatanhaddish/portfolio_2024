@@ -43,21 +43,18 @@
   width: 100px;
 }
 .experience-class-body {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   padding: 0 40px 0 20px;
 }
-/* .experience-class-body:hover {
-  background-color: #0441f5;
-  color: #d2dcea;
-  transition: 0.5s ease-in;
-} */
+
 .experience-class.selected #filler-class {
   background-color: #0441f5;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s;
 }
 .experience-class.selected .experience-class-body {
   background-color: #0441f5;
-  transition: 0.9s ease-in-out;
+  color: #d2dcea;
+  transition: 0.2s ease-in-out;
 }
 .experience-paragraph {
   font-weight: 800;
