@@ -14,11 +14,13 @@
   justify-content: center;
 }
 .home-name-span {
+  /* border: solid blue 2px; */
   color: #0441f5;
   font-family: Papyrus;
 }
 .txt-hello {
   font-weight: bold;
+  /* border: solid blue 2px; */
 }
 .home-buttons {
   /* border: solid orange 2px; */
@@ -43,6 +45,7 @@
 }
 .home-sub {
   font-family: "Gill Sans", sans-serif;
+  /* border: solid blue 2px; */
   font-weight: bold;
   font-size: 2rem;
 }
@@ -54,4 +57,39 @@ button {
   width: 140px;
   font-size: 14px;
   font-weight: bold;
+}
+@media screen and (min-width: 2560px) {
+  .home-img {
+    height: 500px;
+    width: 500px;
+  }
+  .home-name {
+    font-size: 4rem;
+  }
+  .home-sub {
+    font-size: 3rem;
+  }
+  button {
+    height: 75px;
+    width: 180px;
+    font-size: 18px;
+  }
+  .home-buttons {
+    margin-right: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .home-container {
+    height: 117vh;
+  }
+  .home-img {
+    height: 350px;
+    width: 350px;
+  }
+  .home-name {
+    font-size: 3rem;
+  }
+  .home-sub {
+    font-size: 2rem;
+  }
 }
