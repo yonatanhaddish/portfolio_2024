@@ -80,11 +80,18 @@ button {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .home-container {
+    display: flex;
     height: 117vh;
   }
   .home-img {
     height: 350px;
     width: 350px;
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+  .home-detail {
+    align-self: flex-start;
+    margin-top: 100px;
   }
   .home-name {
     font-size: 3rem;
