@@ -1,9 +1,10 @@
 .about-container {
   display: flex;
   justify-content: center;
-  height: 650px;
+  height: 70dvh;
   gap: 12vh;
   background-color: #0441f5;
+  border: solid red 2px;
 }
 .about-description {
   height: 400px;
@@ -32,7 +33,7 @@
   border-radius: 8px;
   transition:
     background-color 0.5s ease,
-    transform 0.5s ease; /* Transition effect */
+    transform 0.5s ease;
 }
 .about-image002 {
   text-align: center;
@@ -44,7 +45,7 @@
   border-radius: 8px;
   transition:
     background-color 0.5s ease,
-    transform 0.5s ease; /* Transition effect */
+    transform 0.5s ease;
 }
 .about-image003 {
   text-align: center;
@@ -56,5 +57,5 @@
   border-radius: 8px;
   transition:
     background-color 0.5s ease,
-    transform 0.5s ease; /* Transition effect */
+    transform 0.5s ease;
 }
