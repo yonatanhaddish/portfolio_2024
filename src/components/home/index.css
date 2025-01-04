@@ -175,7 +175,7 @@ button {
   .home-detail {
     width: 800px;
     height: 600px;
-    align-items: center;
+    /* border: solid red 2px; */
   }
   .home-name {
     font-size: 5rem;
@@ -183,12 +183,9 @@ button {
   .home-sub {
     font-size: 4rem;
   }
-  .home-buttons {
-    width: 140vw;
-  }
   button {
-    height: 90px;
+    height: 80px;
     width: 220px;
-    font-size: 22px;
+    font-size: 28px;
   }
 }
