@@ -4,7 +4,7 @@
   height: 70dvh;
   gap: 12vh;
   background-color: #0441f5;
-  border: solid red 2px;
+  /* border: solid red 2px; */
 }
 .about-description {
   height: 400px;
