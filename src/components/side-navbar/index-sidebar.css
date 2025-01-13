@@ -14,15 +14,16 @@
 
 /* Menu styling */
 .bm-menu {
-  background: rgb(184, 41, 41); /* Menu background color */
+  background: #0441f5; /* Menu background color */
   padding: 1em; /* More uniform padding */
   font-size: 1.2em; /* Slightly larger font */
   max-height: fit-content; /* Set the height to 800 pixels */
-  width: 140vw; /* Set the width to 50% of the viewport width */
+  width: 60vw; /* Set the width to 50% of the viewport width */
   overflow: auto; /* Enable scrolling if content exceeds height */
-  right: 0; /* Align to the right */
+  margin-left: 108px; /* Align to the right */
   display: flex; /* Use flexbox for alignment */
   flex-direction: column; /* Stack items vertically */
+  margin-top: -60px;
 }
 
 /* Prevent body scroll when menu is open */
@@ -46,4 +47,9 @@ body.bm-open {
 /* Overlay styling */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.5); /* Darker overlay for better contrast */
+}
+.close-icon {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 130px;
 }

@@ -1,38 +1,53 @@
 .navbar {
+  background-color: #0441f5;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    /* border: solid red 2px; */
+    background-color: #0441f5;
+    height: 60px;
+    /* display: none; */
+  }
+  .links ul {
+    display: none;
+  }
+}
+
+/* .navbar {
   width: 100%;
   height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0441f5;
-}
-.logo {
+} 
+/* .logo {
   color: white;
   font-weight: bold;
   background-image: url("../../images/logo3.png");
   background-size: cover;
   height: 60%;
   width: 100px;
-}
+} */
 
-.links ul {
+/* .links ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   width: 700px;
   justify-content: space-evenly;
-}
-a {
+} */
+/* a {
   text-decoration: none;
   color: white;
   font-family: "Gill Sans", sans-serif;
-}
-.links ul li a {
+} */
+/* .links ul li a {
   cursor: pointer;
-}
-.links ul li a:hover {
+} */
+/* .links ul li a:hover {
   color: #fff;
-}
+}; */
 
 /* @media screen and (min-width: 2560px) {
   a {
@@ -83,10 +98,11 @@ a {
 /* @media screen and (min-width: 320px) and (max-width: 767px) {
   .navbar {
     height: 12vh;
+    display: none;
   }
   .logo {
     margin-left: 40px;
     height: 40px;
     width: 70px;
   }
-} */
+}; */
