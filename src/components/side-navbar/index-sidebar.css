@@ -1,7 +1,7 @@
 /* Burger button styling */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
+  width: 30px;
   height: 30px;
   right: 20px; /* Position the button on the right side */
   top: 20px;
@@ -9,7 +9,7 @@
 }
 
 .bm-burger-bars {
-  background: #444; /* Dark gray for the burger bars */
+  background: whitesmoke; /* Dark gray for the burger bars */
 }
 
 /* Menu styling */
@@ -34,10 +34,12 @@ body.bm-open {
 /* Menu item styling */
 .menu-item {
   display: block;
-  padding: 15px 0; /* More padding for better spacing */
+  padding: 15px 0;
   color: #fff; /* White text color */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s; /* Smooth transition for hover */
+  /* border: solid red 2px; */
+  margin-top: 20px;
 }
 
 .menu-item:hover {

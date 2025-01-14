@@ -20,13 +20,13 @@ function App() {
         pageWrapId={"page-wrap"}
         outerContainerId={"outer-container"}
       />
-      {/* <Home /> */}
-      {/* <About />
-      <Service />
-      <Project />
-      <Skill />
-      <Experience />
-      <Contact /> */}
+      <Home />
+      {/* <About /> */}
+      {/* <Service /> */}
+      {/* <Project /> */}
+      {/* <Skill /> */}
+      {/* <Experience /> */}
+      {/* <Contact /> */}
       {/* <BoxOne /> */}
       {/* <BoxTwo /> */}
     </>

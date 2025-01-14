@@ -1,7 +1,17 @@
 .navbar {
   background-color: #0441f5;
 }
-@media screen and (max-width: 767px) {
+/* .logo {
+  border: solid red 2px;
+  color: white;
+  font-weight: bold;
+  background-image: url("../../images/logo3.png");
+  background-size: cover;
+  height: 40px;
+  width: 100px;
+  margin-left: 20px;
+}; */
+@media screen and (max-width: 768px) {
   .navbar {
     /* border: solid red 2px; */
     background-color: #0441f5;
@@ -10,6 +20,19 @@
   }
   .links ul {
     display: none;
+  }
+  .close-icon {
+    cursor: pointer;
+  }
+  .logo {
+    /* border: solid red 2px; */
+    color: white;
+    font-weight: bold;
+    background-image: url("../../images/logo4.png");
+    background-size: cover;
+    height: 60px;
+    width: 50px;
+    margin-left: 20px;
   }
 }
 
