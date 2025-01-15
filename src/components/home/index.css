@@ -1,3 +1,21 @@
-.home-container {
-  border: solid red 2px;
+@media screen and (max-width: 736px) {
+  .home-container {
+    border: solid red 2px;
+    height: calc(100dvh - 60px);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .home-detail {
+    border: solid blue 2px;
+  }
+  .home-img {
+    border: solid green 2px;
+    background-image: url("../../images/image001.jpeg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    align-self: center;
+  }
 }
