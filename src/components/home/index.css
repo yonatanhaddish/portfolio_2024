@@ -132,3 +132,66 @@
     font-weight: bold;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .home-container {
+    /* border: solid red 2px; */
+    height: calc(100dvh - 80px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .home-detail {
+    /* border: solid blue 2px; */
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 40%;
+    gap: 25px;
+    align-self: center;
+    justify-content: flex-start;
+  }
+  .home-title {
+    /* border: solid blueviolet 2px; */
+  }
+  .home-name {
+    font-size: 2rem;
+  }
+  .home-sub {
+    font-size: 2rem;
+    display: flex;
+    align-self: flex-start;
+  }
+  .home-name-span {
+    color: #0441f5;
+    font-family: Papyrus;
+  }
+  .txt-hello {
+    font-weight: bold;
+  }
+
+  .home-buttons {
+    /* border: solid greenyellow 2px; */
+    display: flex;
+    gap: 15px;
+    align-self: flex-start;
+  }
+  button {
+    background-color: #0441f5;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    /* gap: 20px; */
+  }
+  .home-img {
+    /* border: solid green 2px; */
+    width: 350px;
+    height: 350px;
+    background-image: url("../../images/image001.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+  }
+}
