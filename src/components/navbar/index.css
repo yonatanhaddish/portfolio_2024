@@ -1,5 +1,7 @@
 .navbar {
   background-color: #0441f5;
+  position: sticky;
+  top: 0;
 }
 @media screen and (max-width: 766px) {
   .navbar {
