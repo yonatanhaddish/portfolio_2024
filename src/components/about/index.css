@@ -1,61 +1,60 @@
 .about-container {
-  display: flex;
-  justify-content: center;
-  height: 70dvh;
-  gap: 12vh;
   background-color: #0441f5;
-  /* border: solid red 2px; */
 }
-.about-description {
-  height: 400px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: space-around;
-  gap: 10px;
-}
-.about-desc {
-  background-color: #d2dcea;
-  padding: 0 20px 0 20px;
-  font-size: 12px;
-  border-radius: 4px;
-  color: #000;
-  font-family: "Playwrite DE Grund", cursive;
-}
-.about-image001 {
-  text-align: center;
-  align-self: center;
-  background-image: url("../../images/image001.jpeg");
-  background-size: cover;
-  height: 350px;
-  width: 350px;
-  border-radius: 8px;
-  transition:
-    background-color 0.5s ease,
-    transform 0.5s ease;
-}
-.about-image002 {
-  text-align: center;
-  align-self: center;
-  background-image: url("../../images/image002.jpeg");
-  background-size: cover;
-  height: 350px;
-  width: 350px;
-  border-radius: 8px;
-  transition:
-    background-color 0.5s ease,
-    transform 0.5s ease;
-}
-.about-image003 {
-  text-align: center;
-  align-self: center;
-  background-image: url("../../images/image003.jpeg");
-  background-size: cover;
-  height: 350px;
-  width: 350px;
-  border-radius: 8px;
-  transition:
-    background-color 0.5s ease,
-    transform 0.5s ease;
+@media screen and (max-width: 767px) {
+  .about-container {
+    height: 90vh;
+    width: 100%;
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-content: center;
+  }
+  .about-image001 {
+    /* border: solid green 2px; */
+    height: 200px;
+    width: 200px;
+    background-image: url("../../images/image001.jpeg");
+    background-size: cover;
+    align-self: center;
+    margin-top: 30px;
+  }
+  .about-image002 {
+    /* border: solid green 2px; */
+    height: 200px;
+    width: 200px;
+    background-image: url("../../images/image002.jpeg");
+    background-size: cover;
+    align-self: center;
+    margin-top: 30px;
+  }
+  .about-image003 {
+    /* border: solid green 2px; */
+    height: 200px;
+    width: 200px;
+    background-image: url("../../images/image003.jpeg");
+    background-size: cover;
+    align-self: center;
+    margin-top: 30px;
+  }
+  .about-description {
+    /* border: solid blue 2px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .about-desc {
+    /* border: solid yellow 2px; */
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 0 20px 0 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #000;
+    font-family: "Playwrite DE Grund", cursive;
+  }
 }
