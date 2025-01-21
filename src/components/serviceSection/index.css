@@ -70,7 +70,7 @@
     height: calc(100dvh - 100px);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
   }
   .service-heading {
     /* border: solid green 2px; */
@@ -82,6 +82,7 @@
     align-self: center;
     color: #d2dcea;
     margin-top: 20px;
+    font-size: 18px;
   }
   .service-cards {
     /* border: solid blue 2px; */
@@ -120,6 +121,6 @@
     width: 80%;
     font-size: 16px;
     font-family: "Playwrite DE Grund", cursive;
-    margin: 20px 20px 0 20px;
+    margin: 20px 0 20px 0;
   }
 }
