@@ -3,7 +3,7 @@ import "./index.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-import Service from "./components/service/Service";
+import Service from "./components/serviceSection/Service";
 import Project from "./components/project/Project";
 import Skill from "./components/skill/Skill";
 import Experience from "./components/experience/Experience";
@@ -22,7 +22,7 @@ function App() {
       />
       <Home />
       <About />
-      {/* <Service /> */}
+      <Service />
       {/* <Project /> */}
       {/* <Skill /> */}
       {/* <Experience /> */}
