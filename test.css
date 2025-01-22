@@ -1,14 +1,13 @@
-.service-container {
-  background-color: #d2dcea;
-  padding: 0 20px 0 20px;
-  height: 600px;
+.project-container {
+  background-color: #0441f5;
+  min-height: 800px;
   display: flex;
   flex-direction: column;
   gap: 6vh;
 }
-.service-heading {
-  background-color: #0441f5;
-  color: #d2dcea;
+.project-heading {
+  background-color: #d2dcea;
+  color: #000;
   width: 160px;
   height: 30px;
   display: flex;
@@ -17,30 +16,21 @@
   align-self: center;
   margin-top: 35px;
 }
-.service-cards {
-  width: 100%;
-  height: 50%;
+.project-cards-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
-.services {
-  background-color: #0441f5;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
+.project-img {
+  height: 250px;
+  width: 240px;
 }
-.services h4 {
-  /* border: solid red 1px; */
+.project {
   background-color: #d2dcea;
-  height: 40px;
-  width: 220px;
-  align-content: center;
-  align-items: center;
-  padding-left: 20px;
-}
-.services p {
-  color: #d2dcea;
-  margin: 20px 20px 0 20px;
-  font-size: 12px;
-  font-family: "Playwrite DE Grund", cursive;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
