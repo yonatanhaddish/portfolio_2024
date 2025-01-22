@@ -1,16 +1,22 @@
 .skill-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  align-content: center;
+  background-color: #e6e6e6;
 }
-.skill-list {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-img {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin-top: 8px;
+@media screen and (max-width: 767px) {
+  .skill-container {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+  }
+  .skill-list {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-top: 16px;
+  }
 }
