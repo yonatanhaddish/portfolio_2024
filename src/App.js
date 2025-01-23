@@ -9,6 +9,7 @@ import Skill from "./components/skill/Skill";
 import Experience from "./components/experience/Experience";
 import Contact from "./components/contact/Contact";
 import SideNavbar from "./components/side-navbar/SideNavbar";
+import Footer from "./components/footer/Footer";
 import BoxOne from "./components/BoxOne/BoxOne";
 import BoxTwo from "./components/BoxTwo/BoxTwo";
 
@@ -27,6 +28,7 @@ function App() {
       <Skill />
       <Experience />
       <Contact />
+      <Footer />
       {/* <BoxOne /> */}
       {/* <BoxTwo /> */}
     </>
