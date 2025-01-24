@@ -2,7 +2,6 @@
   /* border: solid #0441f5 2px; */
   background-color: #e6e6e6;
 }
-
 @media screen and (max-width: 767px) {
   .experience-container {
     /* border: solid red 2px; */
@@ -148,6 +147,80 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+  .experience-container {
+    border: solid green 2px;
+    width: 100%;
+    display: flex;
+    padding-bottom: 60px;
+  }
+  .color-filler {
+    background-color: #0441f5;
+    width: 90px;
+  }
+  .experience-subcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .experience-heading {
+    background-color: #0441f5;
+    color: #e6e6e6;
+    height: 50px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 4vh;
+  }
+  .experience-body {
+    /* border: solid green 2px; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .experience-class {
+    /* border: solid purple 2px; */
+    display: flex;
+    align-items: center;
+  }
+  #filler-class {
+    border: solid blue 2px;
+    width: 100px;
+    height: 20px;
+    background-color: #0441f5;
+  }
+
+  .experience-class-body {
+    border: solid #0441f5 2px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 10px;
+    transition: background-color 0.8s ease-in;
+  }
+  .experience-class-body:hover {
+    background-color: #0441f5;
+    color: #e6e6e6;
+  }
+  .experience-paragraph {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .experience-class-body ul {
+    /* border: solid green 2px; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
     gap: 10px;
   }
 }
