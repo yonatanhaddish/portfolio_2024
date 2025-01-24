@@ -173,6 +173,7 @@
     height: 40px;
     width: 50%;
     margin-top: 20px;
+    margin-left: -1px;
     background-color: #e6e6e6;
     font-size: 18px;
   }

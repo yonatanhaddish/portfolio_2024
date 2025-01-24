@@ -39,3 +39,23 @@
     display: block;
   }
 }
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .skill-container {
+    width: 100%;
+    height: 8vh;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    padding-bottom: 10px;
+  }
+  .skill-list {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-top: 1vh;
+  }
+}
