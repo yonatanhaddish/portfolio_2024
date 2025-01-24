@@ -152,7 +152,7 @@
 }
 @media screen and (min-width: 820px) and (max-width: 1024px) {
   .experience-container {
-    border: solid green 2px;
+    /* border: solid green 2px; */
     width: 100%;
     display: flex;
     padding-bottom: 60px;
