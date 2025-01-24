@@ -20,22 +20,3 @@
     margin-top: 16px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 820px) {
-  .skill-container {
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
-    position: relative;
-    align-content: center;
-  }
-  .skill-list {
-    display: flex;
-    transition: transform 0.5s ease;
-    margin-top: 10px;
-  }
-  img {
-    width: 70%;
-    height: auto;
-    display: block;
-  }
-}

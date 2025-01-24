@@ -22,13 +22,13 @@ function App() {
         outerContainerId={"outer-container"}
       />
       <Home />
-      <About />
-      <Service />
-      <Project />
-      <Skill />
-      <Experience />
-      <Contact />
-      <Footer />
+      {/* <About /> */}
+      {/* <Service /> */}
+      {/* <Project /> */}
+      {/* <Skill /> */}
+      {/* <Experience /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
       {/* <BoxOne /> */}
       {/* <BoxTwo /> */}
     </>
