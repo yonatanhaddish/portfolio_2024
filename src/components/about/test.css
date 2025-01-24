@@ -212,3 +212,22 @@
     font-family: "Playwrite DE Grund", cursive;
   }
 }
+
+.about-image002 {
+  /* border: solid green 2px; */
+  height: 320px;
+  width: 320px;
+  background-image: url("../../images/image002.jpeg");
+  background-size: cover;
+  align-self: center;
+  margin-top: 60px;
+}
+.about-image003 {
+  /* border: solid green 2px; */
+  height: 320px;
+  width: 320px;
+  background-image: url("../../images/image003.jpeg");
+  background-size: cover;
+  align-self: center;
+  margin-top: 60px;
+}
