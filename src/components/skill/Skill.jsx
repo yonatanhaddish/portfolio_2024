@@ -100,7 +100,7 @@ function Skill() {
             className="skill-img"
             style={{ flex: `0 0 ${100 / visibleImages}%` }}
           >
-            <img src={image} alt={`Slide ${index}`} />
+            <img src={image} alt={`Slide ${index}`} className="img-skills" />
           </div>
         ))}
       </div>

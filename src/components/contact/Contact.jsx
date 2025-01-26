@@ -28,7 +28,7 @@ function Contact() {
   }
   return (
     <div className="contact-container">
-      <div className="contact-heading">Contact</div>
+      {/* <div className="contact-heading">Contact</div> */}
       <div className="contact-sub-container">
         <div className="contact-img"></div>
         <div className="contact-form">

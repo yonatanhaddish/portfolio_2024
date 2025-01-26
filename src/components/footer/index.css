@@ -16,3 +16,8 @@
     height: 80px;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .footer {
+    height: 50px;
+  }
+}
