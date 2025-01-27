@@ -80,7 +80,28 @@
     margin-top: 1vh;
   }
 }
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2559px) {
+  .skill-container {
+    width: 100%;
+    /* height: 8vh; */
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    padding-bottom: 10px;
+    border-bottom: #0441f5 solid 40px;
+  }
+  .skill-list {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-top: 1vh;
+  }
+}
+@media screen and (min-width: 2560px) {
   .skill-container {
     width: 100%;
     /* height: 8vh; */
