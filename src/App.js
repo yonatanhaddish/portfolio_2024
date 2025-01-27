@@ -23,12 +23,12 @@ function App() {
       />
       <Home />
       <About />
-      <Service />
-      <Project />
-      <Skill />
-      <Experience />
-      <Contact />
-      <Footer />
+      {/* <Service /> */}
+      {/* <Project /> */}
+      {/* <Skill /> */}
+      {/* <Experience /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
       {/* <BoxOne /> */}
       {/* <BoxTwo /> */}
     </>
