@@ -378,3 +378,67 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .service-container {
+    /* border: solid red 2px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .service-heading {
+    /* border: solid green 2px; */
+    height: 40px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: #d2dcea;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .service-cards {
+    /* border: solid blue 2px; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding-bottom: 70px;
+  }
+  .services {
+    /* border: solid red 2px; */
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    gap: 30px;
+    background-color: #0441f5;
+  }
+  .services h4 {
+    /* border: solid green 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+    margin-left: -1px;
+    font-size: 18px;
+  }
+  .services p {
+    color: #d2dcea;
+    width: 80%;
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    font-family: "Playwrite DE Grund", cursive;
+    margin-bottom: 20px;
+  }
+}
