@@ -10,28 +10,27 @@ import Experience from "./components/experience/Experience";
 import Contact from "./components/contact/Contact";
 import SideNavbar from "./components/side-navbar/SideNavbar";
 import Footer from "./components/footer/Footer";
-import BoxOne from "./components/BoxOne/BoxOne";
-import BoxTwo from "./components/BoxTwo/BoxTwo";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
-    <>
+    <div id="outer-container">
       <Navbar />
-      <SideNavbar
-        pageWrapId={"page-wrap"}
-        outerContainerId={"outer-container"}
-      />
-      <Home />
-      <About />
-      <Service />
-      <Project />
-      <Skill />
-      <Experience />
-      <Contact />
-      <Footer />
-      {/* <BoxOne /> */}
-      {/* <BoxTwo /> */}
-    </>
+      <SideNavbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+      <main id="page-wrap">
+        {/* Your existing app content */}
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)}>Toggle Menu</button>
+        <Home />
+        <About />
+        <Service />
+        <Project />
+        <Skill />
+        <Experience />
+        <Contact />
+        <Footer />
+      </main>
+    </div>
   );
 }
 
