@@ -16,7 +16,12 @@ const SideNavbar = () => {
   };
 
   return (
-    <Menu right isOpen={isOpen} onStateChange={handleStateChange}>
+    <Menu
+      right
+      isOpen={isOpen}
+      onStateChange={handleStateChange}
+      pageWrapId="page-wrap"
+    >
       <FontAwesomeIcon icon={faX} className="close-icon" onClick={closeMenu} />
       <a className="menu-item" href="/" onClick={closeMenu}>
         HOME

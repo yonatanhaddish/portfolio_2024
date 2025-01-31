@@ -15,10 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <SideNavbar
-        pageWrapId={"page-wrap"}
-        outerContainerId={"outer-container"}
-      />
+      <SideNavbar pageWrapId="page-wrap" outerContainerId={"outer-container"} />
       <Home />
       <About />
       <Service />
