@@ -27,7 +27,7 @@ function Contact() {
     e.target.reset();
   }
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       {/* <div className="contact-heading">Contact</div> */}
       <div className="contact-sub-container">
         <div className="contact-img"></div>

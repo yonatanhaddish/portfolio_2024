@@ -67,7 +67,22 @@
     align-items: center;
     height: 70px;
   }
-  .logo {
+
+  .logo .logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    /* height: 30vh; */
+    width: 20vw;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .logo .logo-link:hover {
+    opacity: 0.8;
+  }
+  /* .logo {
     font-weight: bold;
     background-image: url("../../images/logo4.png");
     background-size: cover;
@@ -75,7 +90,9 @@
     width: 50px;
     margin-left: 20px;
     align-self: center;
-  }
+    cursor: pointer;
+  } */
+
   .links ul {
     /* border: solid green 2px; */
     display: flex;

@@ -15,7 +15,7 @@ function About() {
   }, []);
 
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className={`about-${currentSelectedImage}`}></div>
       <div className="about-description">
         <div className="about-desc">

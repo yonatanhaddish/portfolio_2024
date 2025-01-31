@@ -17,34 +17,13 @@ function App() {
     <>
       <Navbar />
       <SideNavbar pageWrapId="page-wrap" outerContainerId={"outer-container"} />
-      <div id="home">
-        {" "}
-        <Home />
-      </div>
-      <div id="about">
-        {" "}
-        <About />
-      </div>
-      <div id="services">
-        {" "}
-        <Service />
-      </div>
-      <div id="projects">
-        {" "}
-        <Project />
-      </div>
-      <div id="skills">
-        {" "}
-        <Skill />
-      </div>
-      <div id="experience">
-        {" "}
-        <Experience />
-      </div>
-      <div id="contact">
-        {" "}
-        <Contact />
-      </div>
+      <Home />
+      <About />
+      <Service />
+      <Project />
+      <Skill />
+      <Experience />
+      <Contact />
       <Footer />
       {/* <BoxOne /> */}
       {/* <BoxTwo /> */}

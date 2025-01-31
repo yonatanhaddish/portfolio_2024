@@ -6,7 +6,15 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">
-        <a href="/" className="a"></a>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="logo-link"
+        >
+          <img src="../../images/logo4.png" alt="Logo" />
+        </Link>
       </div>
       <div className="links">
         <ul>
