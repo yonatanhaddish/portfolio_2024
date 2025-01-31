@@ -86,7 +86,7 @@ function Skill() {
   const translateX = `-${(currentIndex % totalImages) * (100 / visibleImages)}%`;
 
   return (
-    <div className="skill-container">
+    <div className="skill-container" id="skills">
       <div
         className="skill-list"
         style={{

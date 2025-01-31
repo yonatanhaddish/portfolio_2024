@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { push as Menu } from "react-burger-menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
@@ -23,24 +24,69 @@ const SideNavbar = () => {
       pageWrapId="page-wrap"
     >
       <FontAwesomeIcon icon={faX} className="close-icon" onClick={closeMenu} />
-      <a className="menu-item" href="/" onClick={closeMenu}>
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
         HOME
-      </a>
-      <a className="menu-item" href="/about" onClick={closeMenu}>
+      </Link>
+      <Link
+        to="about"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
         ABOUT
-      </a>
-      <a className="menu-item" href="/services" onClick={closeMenu}>
+      </Link>
+      <Link
+        to="services"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
         SERVICE
-      </a>
-      <a className="menu-item" href="/" onClick={closeMenu}>
+      </Link>
+      <Link
+        to="projects"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
         PROJECTS
-      </a>
-      <a className="menu-item" href="/about" onClick={closeMenu}>
+      </Link>
+      <Link
+        to="skills"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
+        SKILLS
+      </Link>
+      <Link
+        to="experience"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
         EXPERIENCE
-      </a>
-      <a className="menu-item" href="/services" onClick={closeMenu}>
+      </Link>
+      <Link
+        to="contact"
+        smooth={true}
+        duration={500}
+        className="menu-item"
+        onClick={closeMenu}
+      >
         CONTACT
-      </a>
+      </Link>
     </Menu>
   );
 };

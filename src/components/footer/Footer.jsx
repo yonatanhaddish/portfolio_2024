@@ -3,7 +3,7 @@ import "./index.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <p>Copyright 2025. Made by Yon with &nbsp;❤️ </p>
     </div>
   );

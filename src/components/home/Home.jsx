@@ -3,7 +3,7 @@ import "./index.css";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       <div className="home-detail">
         <div className="home-title">
           <p className="home-name">

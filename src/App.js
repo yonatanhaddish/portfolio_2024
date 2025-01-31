@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./index.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
@@ -16,13 +17,34 @@ function App() {
     <>
       <Navbar />
       <SideNavbar pageWrapId="page-wrap" outerContainerId={"outer-container"} />
-      <Home />
-      <About />
-      <Service />
-      <Project />
-      <Skill />
-      <Experience />
-      <Contact />
+      <div id="home">
+        {" "}
+        <Home />
+      </div>
+      <div id="about">
+        {" "}
+        <About />
+      </div>
+      <div id="services">
+        {" "}
+        <Service />
+      </div>
+      <div id="projects">
+        {" "}
+        <Project />
+      </div>
+      <div id="skills">
+        {" "}
+        <Skill />
+      </div>
+      <div id="experience">
+        {" "}
+        <Experience />
+      </div>
+      <div id="contact">
+        {" "}
+        <Contact />
+      </div>
       <Footer />
       {/* <BoxOne /> */}
       {/* <BoxTwo /> */}
