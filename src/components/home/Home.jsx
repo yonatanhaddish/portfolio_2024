@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./index.css";
 
 function Home() {
@@ -14,8 +15,28 @@ function Home() {
           <p className="home-sub">A Full Stack Developer</p>
         </div>
         <div className="home-buttons">
-          <button>View Projects</button>
-          <button>Hire Me</button>
+          <button className="button-home">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="button-link"
+            >
+              View Projects
+            </Link>
+          </button>
+          <button className="button-home">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="button-link"
+            >
+              Hire Me
+            </Link>
+          </button>
         </div>
       </div>
       <div className="home-img"></div>

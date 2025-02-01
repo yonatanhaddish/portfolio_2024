@@ -3,7 +3,6 @@
 }
 button {
   background: linear-gradient(to left, #0441f5, #272727);
-  color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -273,14 +272,9 @@ button {
     /* margin-left: 30px; */
   }
   button {
-    background-color: #0441f5;
-    color: white;
     border: none;
     height: 50px;
     width: 140px;
-    font-size: 14px;
-    font-weight: bold;
-    /* gap: 20px; */
   }
 }
 @media screen and (min-width: 1366px) and (max-width: 1440px) {

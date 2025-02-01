@@ -14,7 +14,7 @@
 
 /* Menu styling */
 .bm-menu {
-  background: #0441f5; /* Menu background color */
+  background: linear-gradient(to bottom, #0441f5, #1e263d);
   padding: 1em; /* More uniform padding */
   font-size: 1.2em; /* Slightly larger font */
   max-height: fit-content; /* Set the height to 800 pixels */
@@ -35,20 +35,22 @@ body.bm-open {
 .menu-item {
   display: block;
   padding: 15px 0;
-  color: #fff; /* White text color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s; /* Smooth transition for hover */
+  color: #e6e6e6;
+  text-decoration: none;
+  transition: color 0.3s;
   margin-top: 20px;
 }
 
 .menu-item:hover {
-  color: #ffcc00; /* Light yellow on hover */
+  background: none;
+  color: #000;
+  text-shadow:
+    0 0 10px #e6e6e6,
+    0 0 20px #e6e6e6,
+    0 0 30px #e6e6e6,
+    0 0 40px #e6e6e6;
 }
 
-/* Overlay styling */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.5); /* Darker overlay for better contrast */
-}
 .close-icon {
   color: white;
   font-size: 1.5rem;

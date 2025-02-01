@@ -396,6 +396,7 @@
     width: 30%;
     /* text-align: center; */
     align-self: center;
+    color: #e6e6e6;
   }
   input {
     border: solid #0441f5 2px;
