@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { Link, animateScroll as scrollTo } from "react-scroll";
 import "./index.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
@@ -13,6 +13,9 @@ import SideNavbar from "./components/side-navbar/SideNavbar";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  useEffect(() => {
+    scrollTo.scrollToTop();
+  }, []);
   return (
     <>
       <Navbar />

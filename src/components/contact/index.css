@@ -1,9 +1,18 @@
 .contact-container {
-  background: linear-gradient(to bottom, #0441f5, #1e263d);
+  background: linear-gradient(to top, #0441f5, #1e263d);
 }
 .contact-sub-container {
   margin-top: 5vh;
 }
+.contact-form {
+  background: linear-gradient(to left, #e6e6e6, #808083);
+  box-shadow:
+    0 0 5px #e6e6e6,
+    0 0 10px #e6e6e6,
+    0 0 15px #000,
+    0 0 20px #000;
+}
+
 @media screen and (max-width: 767px) {
   .contact-container {
     /* border: solid red 2px; */
@@ -343,7 +352,6 @@
     /* border: solid red 2px; */
     width: 50%;
     /* background-color: #e6e6e6; */
-    background: linear-gradient(to left, #e6e6e6, #808083);
     display: flex;
     justify-content: center;
     align-self: center;
@@ -382,11 +390,6 @@
     flex-direction: column;
     gap: 10px;
     width: 80%;
-  }
-
-  .contact-info {
-    width: 100%;
-    background-color: #e6e6e6;
   }
   .contact-btn {
     /* border: solid white 2px; */

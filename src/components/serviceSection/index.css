@@ -4,6 +4,12 @@
 .service-heading {
   background-color: #0441f5;
 }
+.services {
+  background: linear-gradient(to bottom, #0441f5, #1e263d);
+}
+.services h4 {
+  background-color: #b8b8b8;
+}
 @media screen and (max-width: 767px) {
   .service-container {
     /* border: solid red 2px; */
@@ -36,7 +42,7 @@
   .services {
     /* border: solid red 2px; */
     height: 180px;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +59,6 @@
     height: 30px;
     width: 70%;
     margin-top: 20px;
-    background-color: #e6e6e6;
   }
   .services p {
     color: #d2dcea;
@@ -226,7 +231,6 @@
     align-self: center;
     gap: 30px;
     /* background-color: #0441f5; */
-    background: linear-gradient(to bottom, #0441f5, #1e263d);
   }
   .services h4 {
     /* border: solid green 2px; */
@@ -238,7 +242,7 @@
     height: 30px;
     margin-top: 20px;
     /* background-color: #e6e6e6; */
-    background-color: #919191;
+
     /* margin-left: 3px; */
     /* font-size: 18px; */
   }
