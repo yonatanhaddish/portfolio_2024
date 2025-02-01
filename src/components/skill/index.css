@@ -1,5 +1,6 @@
 .skill-container {
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
+  background: linear-gradient(to bottom, #e6e6e6, #808083);
 }
 @media screen and (max-width: 767px) {
   .skill-container {

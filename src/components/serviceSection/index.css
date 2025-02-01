@@ -1,5 +1,5 @@
 .service-container {
-  background-color: #e6e6e6;
+  background: linear-gradient(to bottom, #e6e6e6, #808083, #808083);
 }
 .service-heading {
   background-color: #0441f5;
@@ -225,7 +225,8 @@
     align-items: flex-start;
     align-self: center;
     gap: 30px;
-    background-color: #0441f5;
+    /* background-color: #0441f5; */
+    background: linear-gradient(to bottom, #0441f5, #1e263d);
   }
   .services h4 {
     /* border: solid green 2px; */
@@ -236,8 +237,9 @@
     width: 75%;
     height: 30px;
     margin-top: 20px;
-    background-color: #e6e6e6;
-    margin-left: -1px;
+    /* background-color: #e6e6e6; */
+    background-color: #919191;
+    /* margin-left: 3px; */
     /* font-size: 18px; */
   }
   .services p {

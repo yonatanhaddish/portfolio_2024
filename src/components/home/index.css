@@ -9,7 +9,13 @@ button {
   border-radius: 5px;
   transition: background 1s ease;
 }
-
+.home-img {
+  box-shadow:
+    0 0 10px #0441f5,
+    0 0 20px #0441f5,
+    0 0 30px #0441f5,
+    0 0 40px #0441f5;
+}
 /* .home-name-span {
   text-shadow:
     0 0 5px #0441f5,
@@ -231,11 +237,6 @@ button {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow:
-      0 0 10px #0441f5,
-      0 0 20px #0441f5,
-      0 0 30px #0441f5,
-      0 0 40px #0441f5;
   }
   .home-detail {
     /* border: solid blue 2px; */

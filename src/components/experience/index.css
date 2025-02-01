@@ -227,14 +227,16 @@
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .experience-container {
     /* border: solid green 2px; */
+    background: linear-gradient(to bottom, #e6e6e6, #808083);
     width: 100%;
 
     display: flex;
     padding-bottom: 60px;
   }
   .color-filler {
-    background-color: #0441f5;
+    /* background-color: #0441f5; */
     width: 90px;
+    background: linear-gradient(to left, #0441f5, #1e263d);
   }
   .experience-subcontainer {
     width: 100%;
@@ -256,6 +258,7 @@
   }
   .experience-body {
     /* border: solid green 2px; */
+
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -282,7 +285,8 @@
     transition: background-color 1s ease;
   }
   .experience-class-body:hover {
-    background-color: #0441f5;
+    /* background-color: #0441f5; */
+    background: linear-gradient(to right, #0441f5, #1e263d);
     color: #e6e6e6;
   }
   .experience-paragraph {

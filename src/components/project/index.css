@@ -1,9 +1,12 @@
 .project-container {
-  background-color: #0441f5;
+  background: linear-gradient(to bottom, #0441f5, #1e263d);
   padding-bottom: 60px;
 }
 .project-heading {
   background-color: #e6e6e6;
+}
+.project-title {
+  background: linear-gradient(to right, #e6e6e6, #808083);
 }
 @media screen and (max-width: 767px) {
   .project-container {
