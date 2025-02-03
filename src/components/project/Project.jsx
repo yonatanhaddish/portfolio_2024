@@ -13,18 +13,22 @@ function Project() {
         <div className="project">
           <img src={alemCoffee} alt="" className="project-img" />
           <p className="project-title">Alem Cafe</p>
+          <button className="view-project">View Project</button>
         </div>
         <div className="project">
           <img src={alphaTimber} alt="" className="project-img" />
           <p className="project-title">Alpha Timber</p>
+          <button className="view-project">View Project</button>
         </div>
         <div className="project">
           <img src={summerHouse} alt="" className="project-img" />
           <p className="project-title">Summer House</p>
+          <button className="view-project">View Project</button>
         </div>
         <div className="project">
           <img src={zuWeddingDecor} alt="" className="project-img" />
           <p className="project-title">Zu Wedding Decor</p>
+          <button className="view-project">View Project</button>
         </div>
       </div>
     </div>

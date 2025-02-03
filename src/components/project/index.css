@@ -1,5 +1,5 @@
 .project-container {
-  background: linear-gradient(to bottom, #0441f5, #1e263d);
+  background: linear-gradient(to bottom, #4471f8, #0441f5, #1e263d);
   padding-bottom: 60px;
 }
 .project-heading {
@@ -7,6 +7,29 @@
 }
 .project-title {
   background: linear-gradient(to right, #e6e6e6, #808083);
+}
+
+.view-project {
+  /* background: linear-gradient(to bottom, #4471f8, #052994); */
+  background: linear-gradient(to left, #0441f5, #3555b6);
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font: bold;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #e6e6e6;
+}
+.project:hover {
+  scale: 1.05;
+}
+.project:hover .project-title {
+  display: none;
+}
+.project:hover .view-project {
+  display: flex;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .project-container {
@@ -199,6 +222,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .project-img {
     height: 220px;
     width: 200px;
