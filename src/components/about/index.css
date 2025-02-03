@@ -208,6 +208,7 @@
     margin-left: 50px;
   }
   .about-description {
+    /* border: solid white 2px; */
     width: 70%;
     display: flex;
     flex-direction: column;

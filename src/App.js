@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scrollTo } from "react-scroll";
 import "./index.css";
+
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
