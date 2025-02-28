@@ -83,10 +83,10 @@ function Project() {
       {open && (
         <Dialog
           open={open}
-          TransitionComponent={Transition}
+          trasition={Transition}
           onClose={handleClose}
           disableEnforceFocus
-          BackdropProps={{ "aria-hidden": false }}
+          backdropprops={{ "aria-hidden": false }}
         >
           <DialogTitle>{selectedProject?.title}</DialogTitle>
           <DialogContent>
