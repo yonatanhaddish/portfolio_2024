@@ -1,51 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import alemCoffee from "../../images/alem_coffee.jpeg";
 import alphaTimber from "../../images/alpha_timber.jpeg";
 import summerHouse from "../../images/summer_house.jpeg";
 import zuWeddingDecor from "../../images/zu_wedding_decor.jpeg";
 
-import Modal from "@mui/material/Modal";
-import Box from "@mui/material/Box";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Slide from "@mui/material/Slide";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-
-const style = {
-  position: "absolute",
-  top: "60%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "80%",
-  height: "40%",
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
 
 const projectData = [
   {
     img: alemCoffee,
     title: "Alem Cafe",
+    description: "A cozy café with the best coffee in town.",
   },
   {
     img: alphaTimber,
     title: "Alpha Timber",
+    description: "Premium quality timber for all your construction needs.",
   },
   {
     img: summerHouse,
     title: "Summer House",
+    description: "A beautiful vacation house for the summer.",
   },
   {
     img: zuWeddingDecor,
     title: "Zu Wedding Decor",
+    description: "Elegant wedding decorations for your special day.",
   },
 ];
 
+// Slide transition for the modal
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 function Project() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [open, setOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  // Open modal with project details
+  const handleOpen = (project) => {
+    setSelectedProject(project);
+    setOpen(true);
+  };
+
+  // Close modal and reset project state
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <div className="project-container" id="projects">
@@ -59,22 +69,36 @@ function Project() {
               className="project-img"
             />
             <p className="project-title">{project.title}</p>
-            <button className="view-project" onClick={handleOpen}>
+            <button
+              className="view-project"
+              onClick={() => handleOpen(project)}
+            >
               View Project
             </button>
           </div>
         ))}
       </div>
-      <Modal open={open} onClose={handleClose}>
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
-      </Modal>
+
+      {/* Render Dialog only when open */}
+      {open && (
+        <Dialog
+          open={open}
+          TransitionComponent={Transition}
+          onClose={handleClose}
+          disableEnforceFocus
+          BackdropProps={{ "aria-hidden": false }}
+        >
+          <DialogTitle>{selectedProject?.title}</DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              {selectedProject?.description || "No details available."}
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose}>Close</Button>
+          </DialogActions>
+        </Dialog>
+      )}
     </div>
   );
 }
