@@ -36,7 +36,6 @@ const projectData = [
   },
 ];
 
-// Slide transition for the modal
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -45,13 +44,11 @@ function Project() {
   const [open, setOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Open modal with project details
   const handleOpen = (project) => {
     setSelectedProject(project);
     setOpen(true);
   };
 
-  // Close modal and reset project state
   const handleClose = () => {
     setOpen(false);
     setSelectedProject(null);
@@ -79,14 +76,14 @@ function Project() {
         ))}
       </div>
 
-      {/* Render Dialog only when open */}
+      {/* Dialog open when project clicked */}
       {open && (
         <Dialog
           open={open}
-          trasition={Transition}
+          TransitionComponent={Transition}
           onClose={handleClose}
           disableEnforceFocus
-          backdropprops={{ "aria-hidden": false }}
+          BackdropProps={{ "aria-hidden": false }}
         >
           <DialogTitle>{selectedProject?.title}</DialogTitle>
           <DialogContent>
