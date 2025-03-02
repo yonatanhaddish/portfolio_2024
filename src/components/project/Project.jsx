@@ -18,6 +18,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
+const styles = {
+  modal_container: {
+    color: "#000",
+    border: "1px solid #000",
+    height: "30px",
+    width: "30px",
+    backgroundColor: "#e6e6e6",
+    "&:hover": {
+      backgroundColor: "#4441f5",
+      scale: 1.2,
+    },
+  },
+  dialog_action: {
+    gap: "20px",
+    marginBottom: "10px",
+    marginRight: "10px",
+  },
+  dialog_content: {
+    backgroundColor: "#e6e6e6",
+  },
+  dialog_title: {
+    backgroundColor: "#0441f5",
+    color: "#e6e6e6",
+    height: "40%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+};
+
 const projectData = [
   {
     img: alemCoffee,
@@ -92,60 +122,20 @@ function Project() {
           disableEnforceFocus
           BackdropProps={{ "aria-hidden": false }}
         >
-          <DialogTitle
-            sx={{
-              backgroundColor: "#0441f5",
-              color: "#e6e6e6",
-              height: "40%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <DialogTitle sx={styles.dialog_title}>
             {selectedProject?.title}
           </DialogTitle>
-          <Box sx={{ backgroundColor: "#e6e6e6" }}>
+          <Box sx={styles.dialog_content}>
             <DialogContent>
               <DialogContentText>
                 {selectedProject?.description || "No details available."}
               </DialogContentText>
             </DialogContent>
-            <DialogActions
-              sx={{
-                gap: "20px",
-                marginBottom: "10px",
-                marginRight: "10px",
-              }}
-            >
-              <Button
-                onClick={handleClose}
-                sx={{
-                  color: "#000",
-                  border: "1px solid #000",
-                  height: "30px",
-                  width: "30px",
-                  backgroundColor: "#e6e6e6",
-                  "&:hover": {
-                    backgroundColor: "#4441f5",
-                    scale: 1.2,
-                  },
-                }}
-              >
+            <DialogActions sx={styles.dialog_action}>
+              <Button onClick={handleClose} sx={styles.modal_container}>
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </Button>
-              <Button
-                onClick={handleClose}
-                sx={{
-                  color: "#000",
-                  border: "1px solid #000",
-                  height: "30px",
-                  width: "30px",
-                  "&:hover": {
-                    backgroundColor: "#4441f5",
-                    scale: 1.2,
-                  },
-                }}
-              >
+              <Button onClick={handleClose} sx={styles.modal_container}>
                 <FontAwesomeIcon icon={faLink} size="lg" />
               </Button>
             </DialogActions>
