@@ -10,7 +10,7 @@ function About() {
       let selectedRandomImage =
         listImages[Math.floor(Math.random() * listImages.length)];
       setCurrentSelectedImage(selectedRandomImage);
-    }, 4000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -20,17 +20,16 @@ function About() {
       <div className="about-description">
         <div className="about-desc">
           <h3>
-            With a robust foundation in Applied Mathematics and a certificate in
-            Full Stack Development, my career journey as a Software Developer
-            has been fuled by a passion for coding and problem-solving.
-            Meticulously leveraging skills in Ansible, React, NodeJs, Express,
-            SQL and NoSQL Databases.
+            With a strong foundation in Applied Mathematics and a certificate in
+            Full Stack Development, my career as a Software Developer is fueled
+            by a passion for coding and problem-solving.
           </h3>
         </div>
         <div className="about-desc">
           <h3>
-            I am eager to contribute my skills and experience to innovative
-            projects that push the boundaries of technology and create impact
+            I am skilled in leveraging technologies like JavaScript, React,
+            Node.js, SQL, NoSQL, Java, Ansible, DAST scanning, and vulnerability
+            assessments based on OWASP principles to build secure, scalable
             solutions.
           </h3>
         </div>

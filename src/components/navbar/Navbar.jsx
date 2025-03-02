@@ -6,7 +6,6 @@ function Navbar() {
   const [selected, setSelected] = useState("home");
 
   function handleClick(id) {
-    // console.log("clicked", id);
     setSelected(id);
   }
 
@@ -19,9 +18,7 @@ function Navbar() {
           duration={500}
           offset={-50}
           className="logo-link"
-        >
-          <img src="../../images/logo4.png" alt="Logo" />
-        </Link>
+        ></Link>
       </div>
       <div className="links">
         <ul>

@@ -1,37 +1,33 @@
-/* Burger button styling */
 .bm-burger-button {
   position: fixed;
   width: 20px;
   height: 20px;
-  right: 20px; /* Position the button on the right side */
+  right: 20px;
   top: 20px;
   z-index: 1000;
 }
 
 .bm-burger-bars {
-  background: whitesmoke; /* Dark gray for the burger bars */
+  background: whitesmoke;
 }
 
-/* Menu styling */
 .bm-menu {
   background: linear-gradient(to bottom, #0441f5, #1e263d);
-  padding: 1em; /* More uniform padding */
-  font-size: 1.2em; /* Slightly larger font */
-  max-height: fit-content; /* Set the height to 800 pixels */
-  width: 60vw; /* Set the width to 50% of the viewport width */
-  overflow: auto; /* Enable scrolling if content exceeds height */
-  margin-left: 108px; /* Align to the right */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Stack items vertically */
+  padding: 1em;
+  font-size: 1.2em;
+  max-height: fit-content;
+  width: 60vw;
+  overflow: auto;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
   margin-top: -60px;
 }
 
-/* Prevent body scroll when menu is open */
 body.bm-open {
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
-/* Menu item styling */
 .menu-item {
   display: block;
   padding: 15px 0;
