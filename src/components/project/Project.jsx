@@ -12,27 +12,36 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const projectData = [
   {
     img: alemCoffee,
     title: "Alem Cafe",
-    description: "A cozy café with the best coffee in town.",
+    description:
+      "A beautifully designed website for a local café, showcasing their menu, location, and customer reviews. Built with React and Material UI, featuring a smooth user experience and responsive design for all devices.",
   },
   {
     img: alphaTimber,
     title: "Alpha Timber",
-    description: "Premium quality timber for all your construction needs.",
+    description:
+      "An e-commerce platform for a timber supplier, allowing customers to browse products, request quotes, and place orders. Developed using Next.js, Node.js, and PostgreSQL, with a focus on fast performance and secure transactions.",
   },
   {
     img: summerHouse,
     title: "Summer House",
-    description: "A beautiful vacation house for the summer.",
+    description:
+      "A booking system for vacation rentals, enabling users to browse properties, check availability, and book stays. Built with React, Express.js, and MongoDB, incorporating Stripe for secure payments.",
   },
   {
     img: zuWeddingDecor,
     title: "Zu Wedding Decor",
-    description: "Elegant wedding decorations for your special day.",
+    description:
+      "A portfolio website for a wedding decor business, featuring a gallery, customer testimonials, and a contact form. Created using Next.js, Tailwind CSS, and integrated with a CMS for easy content updates.",
   },
 ];
 
@@ -75,8 +84,6 @@ function Project() {
           </div>
         ))}
       </div>
-
-      {/* Dialog open when project clicked */}
       {open && (
         <Dialog
           open={open}
@@ -85,15 +92,64 @@ function Project() {
           disableEnforceFocus
           BackdropProps={{ "aria-hidden": false }}
         >
-          <DialogTitle>{selectedProject?.title}</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              {selectedProject?.description || "No details available."}
-            </DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={handleClose}>Close</Button>
-          </DialogActions>
+          <DialogTitle
+            sx={{
+              backgroundColor: "#0441f5",
+              color: "#e6e6e6",
+              height: "40%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {selectedProject?.title}
+          </DialogTitle>
+          <Box sx={{ backgroundColor: "#e6e6e6" }}>
+            <DialogContent>
+              <DialogContentText>
+                {selectedProject?.description || "No details available."}
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions
+              sx={{
+                gap: "20px",
+                marginBottom: "10px",
+                marginRight: "10px",
+              }}
+            >
+              <Button
+                onClick={handleClose}
+                sx={{
+                  color: "#000",
+                  border: "1px solid #000",
+                  height: "30px",
+                  width: "30px",
+                  backgroundColor: "#e6e6e6",
+                  "&:hover": {
+                    backgroundColor: "#4441f5",
+                    scale: 1.2,
+                  },
+                }}
+              >
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </Button>
+              <Button
+                onClick={handleClose}
+                sx={{
+                  color: "#000",
+                  border: "1px solid #000",
+                  height: "30px",
+                  width: "30px",
+                  "&:hover": {
+                    backgroundColor: "#4441f5",
+                    scale: 1.2,
+                  },
+                }}
+              >
+                <FontAwesomeIcon icon={faLink} size="lg" />
+              </Button>
+            </DialogActions>
+          </Box>
         </Dialog>
       )}
     </div>
