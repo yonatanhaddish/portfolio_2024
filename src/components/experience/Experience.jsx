@@ -16,7 +16,7 @@ const Experience = () => {
     {
       id: "01",
       title:
-        "Associate Software Engineer | TD Bank | December 2023 - July 2024",
+        "Associate Software Developer | TD Bank | December 2023 - July 2024",
       details: [
         "Collaborated in the development of a dynamic web application using Angular for the front-end and NodeJs with MSSQL for the back-end, resulting in a highly responsive and user-friendly interface.",
         "Collaborated in the development of a dynamic web application using React for the front end and resulting in a highly responsive and user-friendly interface.",
@@ -26,31 +26,29 @@ const Experience = () => {
     {
       id: "02",
       title:
-        "Associate Software Engineer | TD Bank | December 2023 - July 2024",
+        "Associate Software Engineer | TD Bank | December 2022 - December 2023",
       details: [
-        "Collaborated in the development of a dynamic web application using Angular for the front-end and NodeJs with MSSQL for the back-end, resulting in a highly responsive and user-friendly interface.",
-        "Collaborated in the development of a dynamic web application using React for the front end and resulting in a highly responsive and user-friendly interface.",
-        "Collaborated with cross-functional teams to deploy a NodeJs application into Azure clouds.",
+        "Mastered basic about Network. Load balancer(F5).",
+        "Mastered how to deploy a webpage using Ansible into remote nodes (servers).",
+        "Collaborated in the development of Automating Network Load-Balancer using Ansible and Ansible Tower Platform.",
       ],
     },
     {
       id: "03",
       title:
-        "Associate Software Engineer | TD Bank | December 2023 - July 2024",
+        "Blockchain Developer (Internship) | Snapbrillia | December 2021 - September 2022",
       details: [
-        "Collaborated in the development of a dynamic web application using Angular for the front-end and NodeJs with MSSQL for the back-end, resulting in a highly responsive and user-friendly interface.",
-        "Collaborated in the development of a dynamic web application using React for the front end and resulting in a highly responsive and user-friendly interface.",
-        "Collaborated with cross-functional teams to deploy a NodeJs application into Azure clouds.",
+        "Doing research on developing a new technology Web3 Application using Haskell Programming Language",
       ],
     },
     {
       id: "04",
       title:
-        "Associate Software Engineer | TD Bank | December 2023 - July 2024",
+        "FrontEnd Web Developer | Angish Consulting | August 2018 - July 2019",
       details: [
-        "Collaborated in the development of a dynamic web application using Angular for the front-end and NodeJs with MSSQL for the back-end, resulting in a highly responsive and user-friendly interface.",
-        "Collaborated in the development of a dynamic web application using React for the front end and resulting in a highly responsive and user-friendly interface.",
-        "Collaborated with cross-functional teams to deploy a NodeJs application into Azure clouds.",
+        "Collaborated with customers to determine needs and work through design and options.",
+        "Built layouts according to customers parameters using HTML5 and CSS.",
+        "Improved and designed new layouts to achieve usability and performance objectives.",
       ],
     },
   ];

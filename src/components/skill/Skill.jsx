@@ -1,73 +1,82 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 
-import ansible from "../../images/ansible.png";
-import github from "../../images/github.png";
-import haskell from "../../images/haskell.png";
-import html from "../../images/html-5.png";
-import java from "../../images/java.png";
-import linux from "../../images/linux.png";
-import mongodb from "../../images/mongodb.png";
-import mysql from "../../images/mysql.png";
-import postgres from "../../images/postgres.png";
-import react from "../../images/react.png";
-import sqlserver from "../../images/sqlserver.png";
-import typescript from "../../images/typescript.png";
-import javascript from "../../images/javascript.png";
+import ansible from "../../images/skills/ansible.png";
+import api from "../../images/skills/api.png";
+import bitbucket from "../../images/skills/bitbucket.png";
+import css from "../../images/skills/css.png";
+import express from "../../images/skills/express.png";
+import github from "../../images/skills/github.png";
+import graphQL from "../../images/skills/graphql.png";
+import haskell from "../../images/skills/haskell.png";
+import html from "../../images/skills/html.png";
+import java from "../../images/skills/java.png";
+import javascript from "../../images/skills/javascript.png";
+import linux from "../../images/skills/linux.png";
+import mongoDB from "../../images/skills/mongodb.png";
+import mySQL from "../../images/skills/mysql.png";
+import nodeJS from "../../images/skills/nodejs.png";
+import postgres from "../../images/skills/postgres.png";
+import react from "../../images/skills/react.png";
+import sql from "../../images/skills/sql.png";
+import sqlserver from "../../images/skills/sqlserver.png";
+import typescript from "../../images/skills/typescript.png";
 
 const skills_img = [
   ansible,
+  api,
+  bitbucket,
+  css,
+  express,
   github,
+  graphQL,
   haskell,
   html,
   java,
+  javascript,
   linux,
-  mongodb,
-  mysql,
+  mongoDB,
+  graphQL,
+  mySQL,
+  nodeJS,
   postgres,
   react,
+  sql,
   sqlserver,
   typescript,
-  javascript,
   ansible,
+  api,
+  java,
+  javascript,
+  linux,
+  mongoDB,
+  graphQL,
+  mySQL,
+  nodeJS,
+  postgres,
+  react,
+  sql,
+  sqlserver,
+  typescript,
+  bitbucket,
+  css,
+  express,
   github,
+  graphQL,
   haskell,
   html,
   java,
+  javascript,
   linux,
-  mongodb,
-  mysql,
+  mongoDB,
+  graphQL,
+  mySQL,
+  nodeJS,
   postgres,
   react,
+  sql,
   sqlserver,
   typescript,
-  javascript,
-  ansible,
-  github,
-  haskell,
-  html,
-  java,
-  linux,
-  mongodb,
-  mysql,
-  postgres,
-  react,
-  sqlserver,
-  typescript,
-  javascript,
-  ansible,
-  github,
-  haskell,
-  html,
-  java,
-  linux,
-  mongodb,
-  mysql,
-  postgres,
-  react,
-  sqlserver,
-  typescript,
-  javascript,
 ];
 
 function Skill() {

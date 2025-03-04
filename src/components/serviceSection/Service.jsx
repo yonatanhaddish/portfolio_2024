@@ -7,7 +7,7 @@ function Service() {
       <div className="service-heading">What I do</div>
       <div className="service-cards">
         <div className="service-webapp services">
-          <h4>Web Application Development</h4>
+          <h4>Application Development</h4>
           <p>
             Offering end-to-end full stack web application development, from
             building responsive front-end user interface to robust back-end
