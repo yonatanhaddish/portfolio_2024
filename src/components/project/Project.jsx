@@ -26,8 +26,9 @@ const styles = {
     width: "30px",
     backgroundColor: "#e6e6e6",
     "&:hover": {
-      backgroundColor: "#4441f5",
+      backgroundColor: "#0441f5",
       scale: 1.2,
+      transition: "background-color 0.3s ease",
     },
   },
   dialog_action: {

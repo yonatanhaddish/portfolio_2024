@@ -43,8 +43,7 @@ const Experience = () => {
     },
     {
       id: "04",
-      title:
-        "FrontEnd Web Developer | Angish Consulting | August 2018 - July 2019",
+      title: "FrontEnd Developer | Angish Consulting | August 2018 - July 2019",
       details: [
         "Collaborated with customers to determine needs and work through design and options.",
         "Built layouts according to customers parameters using HTML5 and CSS.",
