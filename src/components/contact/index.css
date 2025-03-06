@@ -191,12 +191,14 @@
     border: none;
     width: 100%;
     height: 50px;
+    background-color: #aab6db;
   }
   #message {
     /* border: solid #0441f5 2px; */
     border: none;
     height: 200px;
     max-height: 250px;
+    background-color: #aab6db;
   }
   .contact-info .active-input {
     outline: none;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import emailjs from "emailjs-com";
 
@@ -8,11 +8,16 @@ const PUBLIC_KEY = "X40iR-BWrNLaMeJgL";
 
 function Contact() {
   const [selectedBox, setSelectedBox] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [buttonState, setButtonState] = useState(true);
   function handleChange(e) {
     setSelectedBox(e.target.id);
   }
 
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
@@ -25,7 +30,43 @@ function Contact() {
       }
     );
     e.target.reset();
-  }
+  };
+
+  useEffect(() => {
+    if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
+      setButtonState(false);
+    } else {
+      setButtonState(true);
+    }
+  });
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   console.log({
+  //     firstName: firstName,
+  //     lastName: lastName,
+  //     email: email,
+  //     message: message,
+  //   });
+  // };
+  const checkButtonState = () => {
+    if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
+      setButtonState(false);
+    }
+  };
+  const handleChangeFirstName = (e) => {
+    setFirstName(e.target.value);
+  };
+  const handleChangeLastName = (e) => {
+    setLastName(e.target.value);
+  };
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleChangeMessage = (e) => {
+    setMessage(e.target.value);
+  };
+
   return (
     <div className="contact-container" id="contact">
       {/* <div className="contact-heading">Contact</div> */}
@@ -40,7 +81,8 @@ function Contact() {
                   name="first_name"
                   id="first_name"
                   placeholder="First Name"
-                  onFocus={handleChange}
+                  // onFocus={handleChange}
+                  onChange={handleChangeFirstName}
                   className={selectedBox === "first_name" ? "active-input" : ""}
                 />
               </div>
@@ -50,7 +92,8 @@ function Contact() {
                   name="last_name"
                   id="last_name"
                   placeholder="Last Name"
-                  onFocus={handleChange}
+                  // onFocus={handleChange}
+                  onChange={handleChangeLastName}
                   className={selectedBox === "last_name" ? "active-input" : ""}
                 />
               </div>
@@ -61,7 +104,8 @@ function Contact() {
                 name="email"
                 id="email"
                 placeholder="Email"
-                onFocus={handleChange}
+                // onFocus={handleChange}
+                onChange={handleChangeEmail}
                 className={selectedBox === "email" ? "active-input" : ""}
               />
             </div>
@@ -71,11 +115,16 @@ function Contact() {
                 name="message"
                 id="message"
                 placeholder="Your Message here!"
-                onFocus={handleChange}
+                // onFocus={handleChange}
+                onChange={handleChangeMessage}
                 className={selectedBox === "message" ? "active-input" : ""}
               />
             </div>
-            <button type="sumbit" className="contact-btn">
+            <button
+              type="sumbit"
+              className="contact-btn"
+              disabled={buttonState}
+            >
               SEND
             </button>
           </form>
