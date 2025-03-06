@@ -1,9 +1,9 @@
 .contact-container {
   background: linear-gradient(to top, #0441f5, #1e263d);
 }
-.contact-sub-container {
-  margin-top: 5vh;
-}
+/* .contact-sub-container {
+  margin-top: 10vh;
+} */
 .contact-form {
   background: linear-gradient(to left, #e6e6e6, #808083);
   box-shadow:
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
   }
   .contact-heading {
     height: 30px;
@@ -49,11 +49,12 @@
     height: 100%;
     flex-direction: column;
     gap: 30px;
+    margin-top: 10vh;
   }
   .contact-img {
     /* border: solid purple 2px; */
     width: 40%;
-    height: 120px;
+    height: 150px;
     display: flex;
     align-self: center;
     background-image: url("../../images//postman.jpeg");
@@ -83,24 +84,26 @@
     gap: 15px;
   }
   .form div input {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     width: 100%;
     height: 50px;
   }
   #message {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     height: 200px;
     max-height: 250px;
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   .contact-btn {
     width: 60%;
@@ -129,7 +132,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .contact-heading {
     height: 40px;
@@ -147,7 +150,8 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+    margin-top: 7vh;
   }
   .contact-img {
     /* border: solid purple 2px; */
@@ -165,6 +169,7 @@
     display: flex;
     justify-content: center;
     align-self: center;
+    margin-top: 20px;
   }
   .form {
     /* border: solid green 2px; */
@@ -182,24 +187,26 @@
     gap: 15px;
   }
   .form div input {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     width: 100%;
     height: 50px;
   }
   #message {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     height: 200px;
     max-height: 250px;
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   .contact-btn {
     width: 40%;
@@ -227,7 +234,7 @@
     /* height: fit-content; */
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    /* gap: 50px; */
     padding-bottom: 100px;
   }
   .contact-heading {
@@ -246,7 +253,6 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
-    gap: 60px;
   }
   .contact-img {
     /* border: solid purple 2px; */
@@ -256,6 +262,7 @@
     align-self: center;
     background-image: url("../../images//postman.jpeg");
     background-size: cover;
+    margin-top: 40px;
   }
   .contact-form {
     /* border: solid red 2px; */
@@ -264,7 +271,6 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    padding-top: 30px;
   }
   .form {
     /* border: solid green 2px; */
@@ -282,24 +288,24 @@
     gap: 15px;
   }
   .form div input {
-    border: solid #0441f5 2px;
+    border: solid #000 1px;
     width: 100%;
     height: 50px;
   }
   #message {
-    border: solid #0441f5 2px;
+    border: solid #000 1px;
     height: 200px;
     max-height: 250px;
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   .contact-btn {
     width: 40%;
@@ -327,7 +333,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .contact-heading {
     height: 0px;
@@ -345,12 +351,12 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin-top: 30px;
+    margin-top: 100px;
   }
   .contact-img {
     /* border: solid purple 2px; */
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-self: center;
     background-image: url("../../images//postman.jpeg");
@@ -377,15 +383,19 @@
   .f-l-name {
     /* border: solid red 2px; */
     display: flex;
-    /* height: 30px; */
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
     width: 100%;
     gap: 60px;
   }
   .f-l-name input {
+    /* border: solid red 2px; */
     height: 100%;
     width: 100%;
   }
   .contact-info input {
+    /* border: solid red 2px; */
     width: 100%;
     height: 30px;
   }
@@ -412,31 +422,34 @@
     align-self: center;
   }
   input {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 16px;
     padding-left: 5px;
-    background-color: #e6e6e6;
+    /* background-color: #e6e6e6; */
+    background-color: #aab6db;
     /* font-weight: bold; */
   }
   textarea {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 16px;
     padding: 8px 8px 8px 8px;
     max-height: 150px;
     min-height: 150px;
     width: 100%;
     min-width: 99.999%;
-    background-color: #e6e6e6;
+    background-color: #aab6db;
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #e6e6e6;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #e6e6e6;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
 }
 @media screen and (min-width: 1366px) and (max-width: 1440px) {
@@ -448,7 +461,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .contact-heading {
     height: 0px;
@@ -466,7 +479,7 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin-top: 30px;
+    margin-top: 100px;
   }
   .contact-img {
     /* border: solid purple 2px; */
@@ -518,35 +531,39 @@
     width: 100%;
   }
   .contact-btn {
-    border: solid white 2px;
-    width: 30%;
+    /* border: solid white 2px; */
+    width: 40%;
     /* text-align: center; */
+    font-size: 16px;
     align-self: center;
   }
   input {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 16px;
     padding-left: 5px;
-    /* font-weight: bold; */
+    background-color: #aab6db;
   }
   textarea {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 16px;
     padding: 8px 8px 8px 8px;
     max-height: 150px;
     min-height: 150px;
     width: 100%;
     min-width: 99.999%;
+    background-color: #aab6db;
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
@@ -577,12 +594,12 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin-top: 60px;
+    margin-top: 100px;
   }
   .contact-img {
     /* border: solid purple 2px; */
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-self: center;
     background-image: url("../../images//postman.jpeg");
@@ -591,7 +608,7 @@
   .contact-form {
     /* border: solid white 2px; */
     width: 50%;
-    height: 550px;
+    /* height: 550px; */
     background-color: #e6e6e6;
     display: flex;
     justify-content: center;
@@ -610,13 +627,16 @@
   .f-l-name input {
     height: 100%;
     width: 100%;
+    background-color: #aab6db;
   }
   .contact-info input {
     width: 100%;
     height: 40px;
+    background-color: #aab6db;
   }
   .contact-info textarea {
     max-width: 100%;
+    background-color: #aab6db;
   }
   form {
     /* border: solid green 2px; */
@@ -630,19 +650,22 @@
     width: 100%;
   }
   .contact-btn {
-    border: solid white 2px;
+    /* border: solid white 2px; */
     width: 30%;
     /* text-align: center; */
+    font-size: 16px;
     align-self: center;
   }
   input {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 18px;
     padding-left: 5px;
     /* font-weight: bold; */
   }
   textarea {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 18px;
     padding: 8px 8px 8px 8px;
     max-height: 280px;
@@ -652,13 +675,13 @@
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2559px) {
@@ -764,13 +787,13 @@
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -800,13 +823,13 @@
     /* border: solid wheat 2px; */
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 200px;
     /* margin-top: 100px; */
   }
   .contact-img {
     /* border: solid purple 2px; */
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     display: flex;
     align-self: center;
     background-image: url("../../images//postman.jpeg");
@@ -854,34 +877,38 @@
     width: 100%;
   }
   .contact-btn {
-    /* border: solid white 2px; */
+    /* border: solid red 2px; */
     width: 30%;
+    font-size: 20px;
     /* text-align: center; */
     align-self: center;
   }
   input {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 18px;
     padding-left: 5px;
-    /* font-weight: bold; */
+    background-color: #aab6db;
   }
   textarea {
-    border: solid #0441f5 2px;
+    /* border: solid #0441f5 2px; */
+    border: none;
     font-size: 18px;
     padding: 8px 8px 8px 8px;
     max-height: 320px;
     min-height: 320px;
     width: 100%;
     min-width: 99.999%;
+    background-color: #aab6db;
   }
   .contact-info .active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
   #message.active-input {
     outline: none;
-    background-color: #fff;
-    border: solid #0441f5 3px;
+    background-color: #aab6db;
+    border: solid #0441f5 1px;
   }
 }
