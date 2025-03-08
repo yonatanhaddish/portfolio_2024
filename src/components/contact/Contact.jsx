@@ -13,6 +13,8 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonState, setButtonState] = useState(true);
+  const [buttonDisabledClass, setButtonDisabledClass] =
+    useState("button-not-active");
   function handleChange(e) {
     setSelectedBox(e.target.id);
   }
@@ -21,11 +23,11 @@ function Contact() {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
-        console.log("11111111111", result);
+        // console.log("11111111111", result);
         alert("Message Sent");
       },
       (error) => {
-        console.log("222222222", error);
+        // console.log("222222222", error);
         alert("Error Sending Message. Please try again!!!");
       }
     );
@@ -35,6 +37,7 @@ function Contact() {
   useEffect(() => {
     if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
       setButtonState(false);
+      setButtonDisabledClass("button-active");
     } else {
       setButtonState(true);
     }
@@ -122,7 +125,8 @@ function Contact() {
             </div>
             <button
               type="sumbit"
-              className="contact-btn"
+              // className="contact-btn"
+              className={`contact-btn ${buttonDisabledClass}`}
               disabled={buttonState}
             >
               SEND
